@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import SideModal from "./components/SideModalComponent/SideModal";
+import Card from "./components/CardComponent/Card";
+import Modal from "./components/ModalComponent/Modal";
+// import ToggleButton from "./components/toggleButton";
 
 function App() {
+  const [modal, setModal] = useState<boolean>(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <SideModal />
+        <Card />
+        {/* <ToggleButton /> */}
+      </div>
+      <Modal />
+    </>
   );
 }
 

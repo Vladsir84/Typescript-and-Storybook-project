@@ -1,0 +1,70 @@
+.sidemodal {
+    height: 100%;
+    width: 330px;
+    margin: 20px 0 40px 30px;
+    padding: 20px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #9CA4B3;
+    border-radius: 10px; 
+}
+
+.sidemodal-header {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.filter {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.clean {
+    margin-left: 25px;
+    font-size: 18px;
+    color: #10A8C9;
+}
+
+.section-title {
+    color: #9CA4B3;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.industries {
+    margin-top: 15px;
+}
+
+.industry {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.industry-title {
+    color: #515B6C;
+    padding-left: 18px;
+}
+
+.date {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 18px;
+}
+
+.date-title {
+    color: #515B6C;
+}
+
+.sidemodal-button {
+  width: 296px;
+  height: 40px;  
+  color: #FFFFFF;
+  background-color: #10A8C9;
+  margin-top: 30px;
+ // margin-left: 34px;
+  margin-bottom: 40px;
+  border: none;
+}

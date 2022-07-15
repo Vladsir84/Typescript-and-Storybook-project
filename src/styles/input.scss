@@ -1,0 +1,20 @@
+input[type="checkbox" i] {
+    accent-color: #10A8C9;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+.datepicker-input {
+  height: 40px;
+  width: 174px;
+  border-radius: 4px;
+  opacity: 0.4;
+  border-width: 1px;
+  padding-left: 16px;
+}
