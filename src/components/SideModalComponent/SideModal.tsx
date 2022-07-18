@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Checkbox from "./checkbox";
 import DatePickerInput from "./datePickerInput";
 import CloseIcon from "../icons/CloseIcon";
 import SelectInput from "./SelectInput";
 import SideModalButton from "./SideModalButton";
 
-const SideModal = () => {
+interface ModalProps {
+  modalHandler(): void;
+}
+
+const SideModal: React.FC<ModalProps> = (props) => {
   const checkboxes = [
     { id: 1, title: "Business centre" },
     { id: 2, title: "Shopping centre" },
@@ -31,7 +35,7 @@ const SideModal = () => {
 
   return (
     <div className="sidemodal">
-      <CloseIcon />
+      <CloseIcon modalHandler={props.modalHandler}/>
       <div className="sidemodal-header">
         <span className="filter">Filter</span>
         <span className="clean">Clean</span>
@@ -70,7 +74,7 @@ const SideModal = () => {
           <SelectInput />
         </div>
       ))}
-      <SideModalButton />
+      <SideModalButton modalHandler={props.modalHandler} />
     </div>
   );
 };

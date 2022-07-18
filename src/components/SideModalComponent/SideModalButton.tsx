@@ -1,7 +1,15 @@
 import React from "react";
 
-const SideModalButton = () => {
-  return <button className="sidemodal-button">Apply</button>
+interface ModalProps {
+  modalHandler(): void;
+}
+
+const SideModalButton: React.FC<ModalProps> = (props) => {
+  return (
+    <button className="sidemodal-button" onClick={props.modalHandler}>
+      Apply
+    </button>
+  );
 };
 
 export default SideModalButton;

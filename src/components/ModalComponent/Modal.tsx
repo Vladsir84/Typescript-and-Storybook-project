@@ -1,12 +1,16 @@
 import React from "react";
 import CloseIcon from "../icons/CloseIcon";
 
-const Modal = () => {
+interface ModalProps {
+  modalHandler(): void;
+}
+
+const Modal: React.FC<ModalProps> = (props) => {
   return (
     <div className="modal-wrapper">
       <div className="modal-main">
         <div className="close-icon-wrapper">
-          <CloseIcon />
+          <CloseIcon modalHandler={props.modalHandler} />
         </div>
         <div className="exclemation-wrapper">
           <div className="exclemation-round">!</div>
@@ -22,7 +26,9 @@ const Modal = () => {
         </div>
         <div className="modal-buttons">
           <button className="increase-button">Yes, increase</button>
-          <button className="cancel-button">Cancel</button>
+          <button className="cancel-button" onClick={props.modalHandler}>
+            Cancel
+          </button>
         </div>
       </div>
     </div>
