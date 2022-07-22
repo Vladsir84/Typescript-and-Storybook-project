@@ -1,6 +1,6 @@
 .tabbar-main {
-    margin-top: 35px;
-    margin-left: 30px;
+    padding-top: 35px;
+    padding-left: 30px;
     width: 900px;
 }
 
@@ -10,11 +10,12 @@
     color: #515B6C;
     font-size: 14px;
     font-weight: 400;
+    cursor: pointer; 
 
     :nth-child(1n+2) {
         margin-left: 40px;
     }
-
+    
     :hover {
         color: #10A8C9;
     }

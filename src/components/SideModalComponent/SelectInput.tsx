@@ -28,13 +28,13 @@ const SelectInput = () => {
     { value: "100000000", label: "100000000" },
   ];
 
-  type options = { label: string; value: string };
+  // type options = { label: string; value: string };
 
-  const handleSelectionChange = (option: options | null) => {
-    if (option) {
-      setSelectedOption(option);
-    }
-  };
+  // const handleSelectionChange = (option: options | null) => {
+  //   if (option) {
+  //     setSelectedOption(option);
+  //   }
+  // };
 
   return (
     <div style={{ width: "190px", marginRight: "80px" }}>

@@ -1,12 +1,13 @@
 .sidemodal {
     height: 100%;
     width: 330px;
-    margin: 20px 0 40px 30px;
+    margin: 70px 0 15px 30px;
     padding: 20px 0 0 30px;
     display: flex;
     flex-direction: column;
     border: 1px solid #9CA4B3;
     border-radius: 10px; 
+    background-color: #FFFFFF;
 }
 
 .sidemodal-header {
@@ -64,7 +65,7 @@
   color: #FFFFFF;
   background-color: #10A8C9;
   margin-top: 30px;
- // margin-left: 34px;
   margin-bottom: 40px;
   border: none;
+  cursor: pointer;
 }

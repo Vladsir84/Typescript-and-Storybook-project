@@ -7,6 +7,7 @@ import SideModalButton from "./SideModalButton";
 
 interface ModalProps {
   modalHandler(): void;
+  sideModalHandler(): void;
 }
 
 const SideModal: React.FC<ModalProps> = (props) => {
@@ -35,7 +36,7 @@ const SideModal: React.FC<ModalProps> = (props) => {
 
   return (
     <div className="sidemodal">
-      <CloseIcon modalHandler={props.modalHandler}/>
+      <CloseIcon modalHandler={props.sideModalHandler}/>
       <div className="sidemodal-header">
         <span className="filter">Filter</span>
         <span className="clean">Clean</span>
