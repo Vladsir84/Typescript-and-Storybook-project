@@ -2,7 +2,7 @@ import React from "react";
 import StarIcon from "../icons/StarIcon";
 import camera from "../images/camera.png";
 
-const starIcons = [{}, {}, {}, {}, {}];
+const starIcons = [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
 
 const Card = () => {
   return (
@@ -24,15 +24,13 @@ const Card = () => {
       <div className="product-subtitle">SAP123877</div>
       <div className="star-icons">
         {starIcons.map((el: any) => (
-          <StarIcon />
+          <StarIcon key={el.id} />
         ))}
       </div>
       <div className="product-description">
         2MP IP camera in standard casing
       </div>
-      <div className="product-price">
-        100 $
-      </div>
+      <div className="product-price">100 $</div>
     </div>
   );
 };

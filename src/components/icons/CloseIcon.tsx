@@ -17,16 +17,16 @@ const CloseIcon: React.FC<ModalProps> = (props) => {
         <path
           d="M8 8L16 16"
           stroke="#9CA4B3"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M16 8L8 16"
           stroke="#9CA4B3"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
